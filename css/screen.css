@@ -18,22 +18,27 @@ html, body {
 body {
   background-color: white;
   font: 13.34px Merriweather, Georgia, clean, sans-serif;
-  *font-size: small;
   text-align: center;
+  color: #333;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-size: 100%;
+  color: #000;
 }
 
 h1 {
   margin-bottom: 1em;
   font-size: 1.4em;
-  font-weight: normal;
+  font-weight: 700;
 }
 h2 {
   margin-top: 2em;
   font-size: 1.2em;
+  font-weight: 700;
+}
+h3 {
+  font-weight: 700;
 }
 
 p {
@@ -55,6 +60,12 @@ a:hover {
 table {
   font-size: inherit;
   font: 100%;
+}
+
+blockquote {
+  border-left: 4px solid #EEE;
+  padding: 0em 1em;
+  color: #666;
 }
 
 /*****************************************************************************/
@@ -95,9 +106,9 @@ ul.posts {
 
 .title {
   color: #06a;
-  font-weight: bold;
-  margin-bottom: 1.6em;
-  font-size: 1.6em;
+  font-weight: 900;
+  margin-bottom: 1em;
+  font-size: 2em;
 }
 
   .site .title a {
@@ -129,7 +140,7 @@ ul.posts {
     font-size: 80%;
     color: #666;
     border-top: 4px solid #eee;
-    margin-top: 2em;
+    margin-top: 4em;
     overflow: hidden;
   }
 
