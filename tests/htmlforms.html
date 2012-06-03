@@ -1,0 +1,127 @@
+---
+layout: default
+title: Matt Agar
+---
+
+<div id="home">
+    <h1>HTML5 Form Input Type Variants</h1>
+    
+    <form action="">
+        <style>
+            label {
+                display: block;
+            }
+            input {
+                border: 1px solid #ccc;
+                padding: 5px;
+                border-radius: 2px;
+                
+            }
+            input[type=file] {
+                border: inherit;
+
+            }
+            form p {
+                float: left;
+                width: 50%;
+                text-align: left;
+            }
+            form p.clear {
+                clear: both;
+                float: none;
+            }
+        </style>
+        <p>
+            <label for="type-text">Text (text)</label>
+            <input type="text" name="type-text" id="type-text">
+        </p>
+        <p>
+            <label for="type-text-2">Text (text, required, regex pattern and title)</label>
+            <input type="text" name="type-text-2" id="type-text-2" required pattern="[A-Za-z]{1}[0-9]{3}" title="Should be a letter followed by three numbers" >
+        </p>
+        <p>
+            <label for="type-search">Search (search, placeholder)</label>
+            <input type="search" name="type-search" id="type-search" placeholder="Enter a search term">
+        </p>
+        <p>
+            <label for="type-tel">Telephone (tel)</label>
+            <input type="tel" name="type-tel" id="type-tel">
+        </p>
+        <p>
+            <label for="type-url">URL (url)</label>
+            <input type="url" name="type-url" id="type-url">
+        </p>
+        <p>
+            <label for="type-email">E-mail (email)</label>
+            <input type="email" name="type-email" id="type-email">
+        </p>
+        <p>
+            <labe for="type-email-2">Email (multiple plus data list)</label>
+            <input type="email" multiple name="cc" list="contacts" id="type-email-2" />
+            <datalist id="contacts">
+                <option value="hedral@damowmow.com" />
+                <option value="pillar@example.com" />
+                <option value="astrophy@cute.example" />
+                <option value="astronomy@science.example.org" />
+            </datalist>
+        </p>
+        <p>
+            <label for="type-password">Password (password)</label>
+            <input type="password" name="type-password" id="type-password">
+        </p>
+        <p>
+            <label for="type-datetime">Date and Time (datetime)</label>
+            <input type="datetime" name="type-datetime" id="type-datetime">
+        </p>
+        <p>
+            <label for="type-date">Date (date)</label>
+            <input type="date" name="type-date" id="type-date">
+        </p>
+        <p>
+            <label for="type-month">Month (month)</label>
+            <input type="month" name="type-month" id="type-month">
+        </p>
+        <p>
+            <label for="type-week">Week (week)</label>
+            <input type="week" name="type-week" id="type-week">
+        </p>
+        <p>
+            <label for="type-time">Time (time)</label>
+            <input type="time" name="type-time" id="type-time">
+        </p>
+        <p>
+            <label for="type-datetime-local">Local Date and Time (datetime-local)</label>
+            <input type="datetime-local" name="type-datetime-local" id="type-datetime-local">
+        </p>
+        <p>
+            <label for="type-checkbox"><input type="checkbox" name="type-checkbox" id="type-checkbox"> Checkbox (checkbox)</label>
+        </p>
+        <p>
+            <label for="type-radio"><input type="radio" name="type-radio" id="type-radio"> Radio (radio)</label>
+        </p>
+        <p>
+            <label for="type-number">Number (number)</label>
+            <input type="number" name="type-number" id="type-number" min="0" max="20"step="2">
+        </p>
+        <p>
+            <label for="type-range">Range (range)</label>
+            <input type="range" name="type-range" id="type-range" min="0" max="100">
+        </p>
+        <p>
+            <label for="type-file">File (file)</label>
+            <input type="file" name="type-file" id="type-file">
+        </p>
+        <p>
+            <label for="type-file-2">File (file, multiple, accept[image/*])</label>
+            <input type="file" name="type-file" id="type-file-2" multiple accept="image/*">
+        </p>
+        <p>
+            <label for="type-color">Colour (color)</label>
+            <input type="color" name="type-color" id="type-color">
+        </p>
+        <p class="clear">
+            <input type="submit" value="Submit" name="submit-1" />
+            <input type="reset" value="Reset" name="reset-1" />
+        </p>
+    </form>
+</div>  
